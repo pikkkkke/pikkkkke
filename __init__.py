@@ -340,7 +340,10 @@ def show_all_videos():
             "title": video["title"],
             "views": video["views"],
             "collect": video["collect"],
-            "date": video["date"]
+            "date": video["date"],
+            "publisher": video.get("publisher"),
+            "producer": video.get("producer"),
+            "genre": video.get("genre")
         }
 
         data_to_return.append(data)
